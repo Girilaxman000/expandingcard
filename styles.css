@@ -19,9 +19,10 @@ body {
   background-position: center;
   height: 80vh;
   border-radius: 50px;
-  flex: 0.5;
+  width: 100px;
+  margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: width 0.7s ease-in;
 }
 
 .panel h3 {
@@ -34,11 +35,12 @@ body {
 }
 
 .panel.active {
-  flex: 5;
+  width: 500px;
 }
 
 .panel.active h3 {
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 /* screen under 480 */
